@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack Like W@CC 2026 | Back to 2016</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandPink: '#ff2a85',
+                        brandPurple: '#8a2be2',
+                        brandOrange: '#ff8a00',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { 
+            background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); 
+            color: white; 
+            font-family: ui-sans-serif, system-ui, sans-serif; 
+        }
+        .gradient-text { 
+            background: linear-gradient(to right, #ff2a85, #ff8a00); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+    </style>
+</head>
+<body class="min-h-screen selection:bg-brandPink selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="font-bold text-xl tracking-wider">HACK LIKE W@CC</div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="#about" class="hover:text-brandPink transition">Theme</a>
+            <a href="#tracks" class="hover:text-brandPink transition">Tracks</a>
+            <a href="#sponsors" class="hover:text-brandPink transition">Sponsors</a>
+            <a href="#faq" class="hover:text-brandPink transition">FAQ</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="max-w-6xl mx-auto px-6 py-24 text-center">
+        <div class="inline-block px-4 py-1 mb-6 rounded-full border border-brandPink/50 text-brandPink text-sm font-semibold tracking-wide uppercase bg-brandPink/10">
+            October 17-18, 2026 • Georgia Tech
+        </div>
+        <h1 class="text-6xl md:text-8xl font-black mb-4 tracking-tighter">
+            HACK LIKE <br/> <span class="gradient-text">W@CC 2026</span>
+        </h1>
+        <p class="text-2xl md:text-3xl text-gray-300 font-light mb-10 tracking-widest uppercase">
+            Back to 2016
+        </p>
+        <a href="#" class="inline-block bg-gradient-to-r from-brandPink to-brandOrange text-white font-bold py-4 px-10 rounded-full hover:scale-105 transition-transform shadow-[0_0_20px_rgba(255,42,133,0.5)]">
+            Register on Devpost
+        </a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-4xl mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold mb-10 text-center">About the Challenge</h2>
+        <div class="space-y-6 text-lg text-gray-300 leading-relaxed bg-white/5 p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl backdrop-blur-sm">
+            <p class="font-bold text-white text-2xl">Remember 2016?</p>
+            <p>Snapchat streaks were sacred. Pokémon Go had people roaming cities at midnight. Vine dropped six seconds of timeless internet gold on the weekly. And pink skies, LA sunsets, and neon everything were peak aesthetic.</p>
+            <p>We’re bringing that energy back with <span class="text-brandPink font-bold">Hack Like W@CC 2026</span>.</p>
+            <p>Our theme, "Back to 2016," celebrates moments in tech and internet culture that felt creative, chaotic, and full of possibility. Your challenge is to build something that captures the spirit of 2016 while solving problems that matter today. Whether it’s a nostalgic twist on a classic idea or a modern solution inspired by that era, we want to see bold, creative, and impactful hacks.</p>
+            <div class="mt-8 p-6 bg-brandPurple/20 border-l-4 border-brandPink rounded-r-xl text-white font-medium">
+                Hack@W@CC is the flagship annual hackathon hosted by Women@College of Computing at Georgia Tech, open to all women and allies at Georgia Tech and universities across the United States.
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracks & Prizes -->
+    <section id="tracks" class="max-w-6xl mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold mb-12 text-center">Tracks & Prizes</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- ADP Track -->
+            <div class="bg-gradient-to-br from-white/10 to-white/5 p-8 rounded-3xl border border-white/10 hover:border-brandOrange transition">
+                <div class="text-brandOrange font-bold tracking-widest text-sm mb-2">HEADLINE TRACK</div>
+                <h3 class="text-2xl font-bold mb-4">The ADP AI Challenge</h3>
+                <p class="text-gray-300 mb-6">Sponsored by ADP. Build an innovative, AI-driven solution to solve a modern problem. The winning team will be selected directly by ADP judges!</p>
+            </div>
+            <!-- ElevenLabs Track -->
+            <div class="bg-gradient-to-br from-white/10 to-white/5 p-8 rounded-3xl border border-white/10 hover:border-brandPurple transition">
+                <div class="text-brandPurple font-bold tracking-widest text-sm mb-2">API INTEGRATION</div>
+                <h3 class="text-2xl font-bold mb-4">Best Use of ElevenLabs</h3>
+                <p class="text-gray-300 mb-6">Integrate ElevenLabs' Voice AI into your hack. All participants get 1 free month of the Creator tier, and the winning team receives 6 months of the Scale tier ($1980 value per member).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors -->
+    <section id="sponsors" class="max-w-6xl mx-auto px-6 py-20 text-center">
+        <h2 class="text-4xl font-bold mb-12">Powered By</h2>
+        <div class="bg-white/5 p-12 rounded-3xl border border-white/10 inline-block w-full max-w-3xl mb-8">
+            <p class="text-gray-400 font-bold tracking-widest text-sm mb-6 uppercase">Headline Sponsor</p>
+            <h3 class="text-5xl font-black text-white">ADP</h3>
+        </div>
+        <div class="flex flex-wrap justify-center gap-6">
+            <div class="bg-white/5 px-10 py-8 rounded-2xl border border-white/10 w-64 flex items-center justify-center">
+                <h3 class="text-2xl font-bold">ElevenLabs</h3>
+            </div>
+            <div class="bg-white/5 px-10 py-8 rounded-2xl border border-white/10 w-64 flex items-center justify-center">
+                <h3 class="text-2xl font-bold">Featherless.ai</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-10 text-center text-gray-500 text-sm mt-12">
+        <p>Hosted by Women @ College of Computing at Georgia Tech</p>
+    </footer>
+
+</body>
+</html>
