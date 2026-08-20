@@ -38,7 +38,7 @@
     <style>
         /* Animated Pastel Tie-Dye Background */
         body { 
-            background: linear-gradient(-45deg, #ffb6b9, #fae3d9, #bbded6, #8ac6d1);
+            background: linear-gradient(-45deg, #ffb6b9, #ffdac1, #fae3d9, #e2d1f9);
             background-size: 400% 400%;
             animation: gradientBG 15s ease infinite;
             color: white; 
@@ -112,24 +112,175 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="max-w-4xl mx-auto px-6 py-20 relative z-10">
-        <h2 class="text-4xl mb-10 text-center text-white drop-shadow-lg handwriting-font">About the Challenge</h2>
-        <div class="space-y-6 text-lg text-white leading-relaxed glass-card p-8 md:p-12 rounded-3xl">
-            <p class="font-bold text-2xl handwriting-font tracking-widest">Remember 2016?</p>
-            <p>Snapchat streaks were sacred. Pokémon Go had people roaming cities at midnight. Vine dropped six seconds of timeless internet gold on the weekly. And pink skies, LA sunsets, and neon everything were peak aesthetic.</p>
-            <p>We’re bringing that energy back with <span class="font-bold text-pastelPink drop-shadow-md">Hack Like W@CC 2026</span>.</p>
-            <p>Our theme, "Back to 2016," celebrates moments in tech and internet culture that felt creative, chaotic, and full of possibility. Your challenge is to build something that captures the spirit of 2016 while solving problems that matter today. Whether it’s a nostalgic twist on a classic idea or a modern solution inspired by that era, we want to see bold, creative, and impactful hacks.</p>
-            <div class="mt-8 p-6 bg-white/20 border-l-4 border-white rounded-r-xl font-medium">
-                Hack@W@CC is the flagship annual hackathon hosted by Women@College of Computing at Georgia Tech, open to all women and allies at Georgia Tech and universities across the United States.
+    <section id="about" class="max-w-5xl mx-auto px-6 py-20 relative z-10">
+        <h2 class="text-5xl mb-12 text-center text-white drop-shadow-lg handwriting-font">About the Challenge</h2>
+        
+        <!-- 2016 Instagram Post Container -->
+        <div class="bg-white max-w-3xl mx-auto rounded-sm shadow-2xl overflow-hidden font-sans text-gray-900 transform rotate-1 hover:rotate-0 transition duration-300 border border-gray-300">
+            
+            <!-- Post Header -->
+            <div class="flex items-center justify-between p-5 border-b border-gray-200 bg-gray-50">
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-full bg-gray-300 overflow-hidden border border-gray-300">
+                        <img src="https://via.placeholder.com/150" alt="Profile" class="w-full h-full object-cover grayscale opacity-80">
+                    </div>
+                    <div class="leading-tight">
+                        <!-- Classic 2016 IG Blue Username -->
+                        <p class="font-bold text-lg text-[#125688]">waccgt</p> 
+                        <p class="text-sm text-gray-500">Georgia Institute of Technology</p>
+                    </div>
+                </div>
+                <div class="text-gray-400 font-bold text-xl tracking-widest">•••</div>
+            </div>
+
+            <!-- Post Image (1:1 Square) -->
+            <div class="w-full aspect-square bg-gradient-to-br from-pastelPink via-pastelPeach to-pastelBlue flex flex-col items-center justify-center p-8 text-center relative shadow-inner">
+                <h3 class="text-7xl font-black text-white drop-shadow-md handwriting-font mb-4 tracking-widest transform -rotate-3">REMEMBER<br>2016?</h3>
+            </div>
+
+            <!-- Action Bar (Icons) -->
+            <div class="flex items-center justify-between p-5 pb-3">
+                <div class="flex items-center gap-5">
+                    <!-- Classic Hollow Heart Icon -->
+                    <svg aria-label="Like" class="text-gray-900" fill="currentColor" height="36" viewBox="0 0 48 48" width="36">
+                        <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+                    </svg>
+                    <!-- Classic Comment Icon -->
+                    <svg aria-label="Comment" class="text-gray-900" fill="currentColor" height="36" viewBox="0 0 48 48" width="36">
+                        <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10l-1.5 2.8 1.4 5.5-5.5-1.4-2.8 1.5c-3 1.6-6 2.6-10 2.6-11.6 0-21-9.4-21-21s9.4-21 21-21 21 9.4 21 21z" fill-rule="evenodd"></path>
+                    </svg>
+                    <!-- Classic Share Icon -->
+                    <svg aria-label="Share Post" class="text-gray-900" fill="currentColor" height="36" viewBox="0 0 48 48" width="36">
+                        <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Likes -->
+            <div class="px-5 pb-3 text-lg">
+                <p class="font-bold text-[#125688]">1,017 likes</p>
+            </div>
+
+            <!-- Caption Area -->
+            <div class="px-5 pb-5 text-lg text-gray-800 leading-relaxed">
+                <p class="mb-4"><span class="font-bold text-[#125688] mr-3">waccgt</span>Snapchat streaks were sacred. Pokémon Go had people roaming cities at midnight. Vine dropped six seconds of timeless internet gold on the weekly. And pink skies, LA sunsets, and neon everything were peak aesthetic. 🌸✨</p>
+                
+                <p class="mb-4">We’re bringing that energy back with <span class="font-bold text-pastelPink drop-shadow-sm">Hack Like W@CC 2026</span>.</p>
+                
+                <p class="mb-5">Our theme, "Back to 2016," celebrates moments in tech and internet culture that felt creative, chaotic, and full of possibility. Your challenge is to build something that captures the spirit of 2016 while solving problems that matter today. Whether it’s a nostalgic twist on a classic idea or a modern solution inspired by that era, we want to see bold, creative, and impactful hacks. 💻🌴</p>
+                
+                <!-- Hashtags / Fine print -->
+                <p class="text-base text-blue-900 bg-blue-50 p-4 rounded border border-blue-100 mb-3 font-medium">
+                    Hack@W@CC is the flagship annual hackathon hosted by Women@College of Computing at Georgia Tech, open to all women and allies at Georgia Tech and universities across the United States.
+                </p>
+                
+                <!-- Timestamp -->
+                <p class="text-gray-400 mt-4 text-sm uppercase tracking-wider font-semibold">October 17, 2026</p>
+            </div>
+            
+            <!-- Comment Add Bar (Classic IG) -->
+            <div class="border-t border-gray-200 p-5 flex items-center justify-between text-lg">
+                <p class="text-gray-400 font-medium">Add a comment...</p>
+                <div class="text-[#125688] font-bold text-xl">•••</div>
             </div>
         </div>
     </section>
 
     <!-- Schedule Section -->
-    <section id="schedule" class="max-w-6xl mx-auto px-6 py-20 relative z-10">
-        <h2 class="text-4xl mb-12 text-center text-white drop-shadow-lg handwriting-font">Schedule</h2>
-        <div class="glass-card p-12 rounded-3xl text-center max-w-2xl mx-auto">
-            <p class="text-3xl text-white tracking-widest uppercase handwriting-font">Coming Soon</p>
+    <section id="schedule" class="max-w-2xl mx-auto px-6 py-20 relative z-10">
+        <div class="flex justify-center items-center mb-12">
+            <h2 class="text-5xl text-white drop-shadow-lg handwriting-font">Schedule</h2>
+            <!-- 100 Day Streak Badge -->
+            <div class="ml-4 px-4 py-1 bg-white/20 rounded-full text-white font-bold text-xl flex items-center backdrop-blur-sm border border-white/30 shadow-sm font-sans">
+                🔥 100
+            </div>
+        </div>
+        
+        <!-- Snapchat UI Container -->
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden font-sans text-gray-900 border border-gray-300 transform -rotate-1 hover:rotate-0 transition duration-300">
+            
+            <!-- App Header -->
+            <div class="bg-[#99539f] text-white p-5 text-center font-bold text-xl tracking-wide shadow-sm relative z-10">
+                Stories
+            </div>
+
+            <!-- Category Header -->
+            <div class="bg-gray-100 text-[#99539f] font-bold text-sm px-5 py-2 border-b border-gray-200 uppercase tracking-wider">
+                Recent Updates
+            </div>
+
+            <div class="flex flex-col">
+                <!-- Event 1 (Red Solid - Photo) -->
+                <div class="flex items-center gap-5 p-5 border-b border-gray-100 hover:bg-gray-50 transition cursor-default">
+                    <div class="w-7 h-7 bg-[#ed2553] rounded-[5px] flex-shrink-0 shadow-sm"></div>
+                    <div class="flex-grow">
+                        <p class="font-bold text-lg text-gray-900 leading-tight">Check-in & Breakfast</p>
+                        <p class="text-gray-400 text-sm mt-1">Saturday • 9:00 AM</p>
+                    </div>
+                </div>
+
+                <!-- Event 2 (Purple Solid - Video) -->
+                <div class="flex items-center gap-5 p-5 border-b border-gray-100 hover:bg-gray-50 transition cursor-default">
+                    <div class="w-7 h-7 bg-[#99539f] rounded-[5px] flex-shrink-0 shadow-sm"></div>
+                    <div class="flex-grow">
+                        <p class="font-bold text-lg text-gray-900 leading-tight">Opening Ceremony & ADP Keynote</p>
+                        <p class="text-gray-400 text-sm mt-1">Saturday • 10:00 AM</p>
+                    </div>
+                </div>
+
+                <!-- Event 3 (Purple Solid - Video) -->
+                <div class="flex items-center gap-5 p-5 border-b border-gray-100 hover:bg-gray-50 transition cursor-default">
+                    <div class="w-7 h-7 bg-[#99539f] rounded-[5px] flex-shrink-0 shadow-sm"></div>
+                    <div class="flex-grow">
+                        <p class="font-bold text-lg text-gray-900 leading-tight">ADP AI Workshop</p>
+                        <p class="text-gray-400 text-sm mt-1">Saturday • 10:30 AM</p>
+                    </div>
+                </div>
+
+                <!-- Event 4 (Red Solid - Photo) -->
+                <div class="flex items-center gap-5 p-5 border-b border-gray-100 hover:bg-gray-50 transition cursor-default">
+                    <div class="w-7 h-7 bg-[#ed2553] rounded-[5px] flex-shrink-0 shadow-sm"></div>
+                    <div class="flex-grow">
+                        <p class="font-bold text-lg text-gray-900 leading-tight">Hacking Begins!</p>
+                        <p class="text-gray-400 text-sm mt-1">Saturday • 11:30 AM</p>
+                    </div>
+                </div>
+                
+                <!-- Category Header (Viewed) -->
+                <div class="bg-gray-100 text-gray-500 font-bold text-sm px-5 py-2 border-y border-gray-200 uppercase tracking-wider">
+                    Viewed Updates
+                </div>
+
+                <!-- Event 5 (Red Hollow - Viewed Photo) -->
+                <div class="flex items-center gap-5 p-5 border-b border-gray-100 bg-gray-50/50 cursor-default">
+                    <div class="w-7 h-7 border-[3px] border-[#ed2553] bg-transparent rounded-[5px] flex-shrink-0"></div>
+                    <div class="flex-grow">
+                        <p class="font-normal text-lg text-gray-700 leading-tight">Lunch Served</p>
+                        <p class="text-gray-400 text-sm mt-1">Opened • Saturday 1:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Event 6 (Purple Hollow - Viewed Video) -->
+                <div class="flex items-center gap-5 p-5 bg-gray-50/50 cursor-default">
+                    <div class="w-7 h-7 border-[3px] border-[#99539f] bg-transparent rounded-[5px] flex-shrink-0"></div>
+                    <div class="flex-grow">
+                        <p class="font-normal text-lg text-gray-700 leading-tight">Project Submissions Due</p>
+                        <p class="text-gray-400 text-sm mt-1">Opened • Sunday 12:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom App Navigation (Fake UI) -->
+            <div class="border-t border-gray-200 p-4 flex justify-between items-center bg-gray-50 px-12">
+                <!-- Chat Icon -->
+                <div class="w-8 h-8 rounded-sm border-[3px] border-gray-300"></div>
+                <!-- Camera Shutter Button -->
+                <div class="w-14 h-14 rounded-full border-[5px] border-gray-300 bg-white"></div>
+                <!-- Stories Icon (Active) -->
+                <div class="w-8 h-8 rounded-full border-[3px] border-[#99539f] bg-[#99539f]/10 relative">
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#99539f] rounded-full"></div>
+                </div>
+            </div>
         </div>
     </section>
 
